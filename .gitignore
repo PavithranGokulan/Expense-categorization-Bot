@@ -1,0 +1,31 @@
+src/saved_model/config.json
+src/saved_model/special_tokens_map.json
+src/saved_model/tf_model.h5
+src/saved_model/tokenizer_config.json
+src/saved_model/vocab.txt
+
+# Node.js dependencies
+node_modules/
+dist/
+
+# Python cache & model files
+__pycache__/
+label_classes.npy
+
+# Uploads & Temporary files
+uploads/
+
+# SQL files (Ignore database files but keep schema)
+*.sqlite
+*.db
+
+# Environment variables
+.env
+
+# Data files (Optional: Ignore large datasets)
+# *.xlsx
+# *.csv
+
+# IDE & System files
+.vscode/
+.DS_Store

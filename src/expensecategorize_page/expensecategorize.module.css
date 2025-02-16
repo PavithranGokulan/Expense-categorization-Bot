@@ -1,0 +1,129 @@
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.Box-1, .categorized-expenses-box {
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 7px rgb(27, 27, 27);
+  border-radius: 10px;
+  background: #353434;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure both boxes have the same height */
+}
+
+.categorized-expenses-box {
+  background-color: #414040;
+  overflow-y: auto;
+  height: 400px; /* Set a specific height for scrolling */
+}
+
+.categorized-expenses-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categorized-expenses-list {
+  overflow-y: auto;
+  max-height: 380px; /* Set to control the scrolling */
+}
+
+.categorized-expense-list-item {
+  background-color: #414040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 5px rgb(43, 42, 42);
+  border-radius: 10px;
+}
+
+.categorized-expense-list-item h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.categorized-expense-list-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #7AC74F;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.categorized-expense-list-category p {
+  font-size: 18px;
+  margin-right: 30px;
+  color: white;
+}
+
+.graph-container,
+.categorized-expenses-list {
+  border: 2px solid #848785;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.graph-wrapper {
+  position: relative;
+}
+
+.graph-wrapper h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.total-expense-value {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Center the title */
+  align-items: center;
+  position: relative; /* Position relative for absolute positioned button */
+  padding: 10px 5px;
+}
+
+.home-button{
+  background-color: rgb(71, 71, 71);
+  color: #fff;
+  margin-right: 5px;
+}
+
+.ExpH {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .Box-1,
+  .categorized-expenses-box {
+    width: 45%;
+    max-width: none;
+    height: 100%; /* Ensure equal height in larger screens */
+  }
+}

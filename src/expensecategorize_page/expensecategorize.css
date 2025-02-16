@@ -1,0 +1,17 @@
+/* Global Styles - Retain only what's necessary */
+
+body {
+  background-color: #1f1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Any other global styles that apply to the entire application */
